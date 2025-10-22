@@ -69,7 +69,7 @@ def valid_compress_level(val: str) -> int:
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Hide a string in a picture wirh *steghide*."
+        description="Hide a string in a picture with *steghide*."
     )
     sub = parser.add_subparsers(dest="cmd", required=True)
 
@@ -108,10 +108,10 @@ def main():
             message = args.message
 
         if not args.cover.exists():
-            print(f"Target image: {args.cover}", file=sys.stderr)
+            print(f"Target image: {args.cover} not found", file=sys.stderr)
             sys.exit(1)
 
-        # Zielordner anlegen falls nötig
+        # Create directory of necessary
         args.out.parent.mkdir(parents=True, exist_ok=True)
         embed_string(args.cover, args.out, message, args.passphrase, args.compress, args.force)
 
