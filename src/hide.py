@@ -56,7 +56,7 @@ def extract(out_path: Path, extract_to: Path, passphrase: str | None):
     else:
         cmd += ["-p", ""]  # set empty password
     run(cmd)
-    print(f"✔ Nachricht extrahiert nach: {extract_to}")
+    print(f"Extract message to: {extract_to}")
 
 def valid_compress_level(val: str) -> int:
     try:
