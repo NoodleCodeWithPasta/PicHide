@@ -1,4 +1,4 @@
-# 🖼️ PicHide
+# PicHide
 
 **PicHide** is a lightweight Python tool that hides secret messages or files inside images using the [`steghide`](https://steghide.sourceforge.net/) steganography utility.  
 It provides a simple command-line interface and a fully containerized setup for reproducible, dependency-free use.
@@ -28,13 +28,11 @@ It provides a simple command-line interface and a fully containerized setup for 
    - **Arch Linux:**  
      ```bash
      git clone https://aur.archlinux.org/steghide.git
-     cd steghide
-     makepkg -si
      ```
 
 2. Clone the repository:
    ```bash
-   git clone https://github.com/<your-user>/PicHide.git
+   git clone https://github.com/NoodleCodeWithPasta/PicHide.git
    cd PicHide
    ```
 
